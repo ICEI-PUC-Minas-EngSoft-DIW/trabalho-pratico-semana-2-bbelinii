@@ -1,0 +1,9 @@
+.barra-azul {
+    width: 50px;           /* Largura da barrinha (ajuste se quiser maior/menor) */
+    height: 4px;           /* Altura fininha da barra */
+    background: #1976d2;   /* Azul (ajuste para o tom que preferir) */
+    border-radius: 2px;    /* Arredonda um pouco as pontas (opcional) */
+    margin-bottom: 6px;    /* Espaço entre a barra e o título */
+    margin-left: auto;
+    margin-right: auto;
+}
