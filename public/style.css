@@ -4,40 +4,39 @@
 html, body { height: 100%; margin: 0; }
 body {
 min-height: 100vh;
-/* 42% é só exemplo: mova o “corte” para casar com a sua linha */
 background: linear-gradient(to left, #e01d24 0 70px, #ffffff 60% 100%);
 }
 
 .nome {
   font-family: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   margin: 0;
-  line-height: 1.05;           /* mais compacto, como no layout */
-  text-transform: uppercase;   /* tudo em maiúsculas */
+  line-height: 1.02;           /* mais compacto, como no layout */
+  text-transform: uppercase;   
 }
 
 
 .nome--destaque {
-  font-weight: 800;            /* 700–800: escolha conforme o quão “bold” quiser */
+  font-weight: 900;            
   font-size: clamp(60px, 5vw, 44px);
-  color: #1E63C6;              /* ajuste se precisar (#1e63c6/#1b66d1/#0d6efd) */
+  color: #1E63C6;              
 }
 
 
 .nome--sobrenome {
-  font-weight: 400;            /* leve */
+  font-weight: 400;            
   font-size: clamp(50px, 4.2vw, 36px);
-  color: #8A97A8;              /* cinza azulado suave */
-  letter-spacing: 0.06em;      /* dá o “respiro” do exemplo */
-  margin-top: 4px;             /* pequeno espaçamento entre as linhas */
+  color: #8A97A8;              
+  letter-spacing: 0.06em;      
+  margin-top: 4px;             
 }
 
 .foto-perfil {
-  width: 600px;          /* Escolha o tamanho desejado */
+  width: 600px;          
   height: auto;          /* Mantém a proporção */
   position: absolute;    /* Removerá do fluxo padrão e permitirá posicionamento */
   top: 32%;             /* Distância do topo */
   right: 120px;           /* Distância da direita */
-  border-radius: 7%;    /* Opcional, deixa a imagem redonda */
+  border-radius: 7%;    
 }
 .superior {
   position: relative;
@@ -65,3 +64,32 @@ h3{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.644);
 }
+
+.lado{
+  margin-left: -19px;
+}
+
+
+.menu {
+  position: fixed;             
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%); 
+  display: flex;
+  gap: 8px;
+  z-index: 1000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu button {
+  padding: 8px 14px;
+  border: 0;
+  background: #0b66ff;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.menu button:hover {
+  background: #084dcc;
+}
+
