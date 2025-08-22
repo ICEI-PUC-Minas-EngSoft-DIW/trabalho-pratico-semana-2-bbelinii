@@ -32,15 +32,15 @@ background: linear-gradient(to left, #e01d24 0 70px, #ffffff 60% 100%);
 
 .foto-perfil {
   width: 600px;          
-  height: auto;          /* Mantém a proporção */
+  height: 600px;          /* Mantém a proporção */
   position: absolute;    /* Removerá do fluxo padrão e permitirá posicionamento */
   top: 32%;             /* Distância do topo */
-  right: 120px;           /* Distância da direita */
+  right: 100px;           /* Distância da direita */
   border-radius: 7%;    
 }
 .superior {
   position: relative;
-  margin-left: 16px;    /* Cria um contexto para .foto-perfil */
+  margin-left: 16px;    
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgba(0, 0, 0, 0.644);
 }
@@ -91,5 +91,16 @@ h3{
 }
 .menu button:hover {
   background: #084dcc;
+}
+.footer{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+}
+
+.cursos_exp{
+  position: relative;
+  left: 40px;
+
+  margin-left: 400px;
 }
 
